@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.fixed-header h1 {
+  margin: 0;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.fixed-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fixed-header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.fixed-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fixed-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding-top to the main content to prevent it from being hidden behind the fixed header */
+main {
+  padding-top: 70px; /* Adjust this value based on the height of your header */
+}
